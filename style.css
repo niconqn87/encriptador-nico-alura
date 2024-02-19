@@ -1,0 +1,188 @@
+body{
+    background: #ced4da;
+}
+.body{
+    width: 1440px;
+    height: 1024px;
+    background: #ced4da;
+}
+.logo{
+    width: 10%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2em auto;
+}
+.contenido-encriptar{
+    display: inline-block;
+    width: 60%;
+    height: 600px;
+    vertical-align: top;
+}
+.texto-encriptar{
+    display: inline-block;
+    border: none ;
+    width: 100%;
+    height: 80%;
+    font-size: 2em;
+    background: #ced4da
+}
+input:focus{
+    outline: none;
+}
+.botones-y-alerta p{
+    font-size: 20px;
+    padding: 5px;
+}
+.boton-encriptar, .boton-desencriptar {
+    width: 35%;
+    border: 1px solid #052051;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+button:active{
+    transform: scale(0.9);
+    transition: 0.08s;
+}
+.boton-encriptar{
+    background: #052051;
+    color: white;
+}
+.boton-desencriptar{
+    margin: 0 10%;
+    background: #adb5bd;
+}
+
+
+/*todo lo que es de la caja encriptado va acá*/
+.contenido-encriptado{
+    display: inline-block;
+    width: 25%;
+    height: 550px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 2px 2px 1px #868e96;
+}
+.contenido-encriptado p:first-child{
+    height: 10%;
+    padding: 10%;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+.muñeco{
+    width:80% ;
+    margin: 0 10%;
+}
+.contenido-encriptado h2{
+    text-align: center;
+    font-size: 2em;
+}
+.contenido-encriptado h3{
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+}
+.desktop1{
+    display: block;
+}
+.boton-copiar{
+    width: 70%;
+    border: 1px solid #052051;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 100% 15%;
+    background: #ffffff;
+    vertical-align: bottom;
+    display: none;
+}
+
+/* para tablet*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+    .body{
+        width: 768px;
+        height: 1024px;
+    }
+    .logo {
+        display: block;
+    }
+    .contenido-encriptar {
+        display: block;
+        width: 100%;
+        height: 600px;
+    }
+    .boton-encriptar, .boton-desencriptar {
+        width: 40% 
+        }
+    .boton-encriptar{
+        margin: 0 7%;
+    }
+    .boton-desencriptar{
+        margin: 0;
+    }
+    .contenido-encriptado{
+        display: inline-block;
+        width: 100%;
+        height: 300px;
+        margin: 0 5px;
+        vertical-align: bottom;
+    }
+    .contenido-encriptado p:first-child{
+        font-size: 2em;
+    }
+    .muñeco{
+        display: none;
+    }
+    .boton-copiar{
+        margin: 0 15%;
+    }
+  }
+/* para celular*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 633px) {
+    .body {
+        width: 375px;
+        height: 633px;
+    }
+
+    .logo {
+        display: block;
+        width: 30%;
+    }
+    .contenido-encriptar {
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+    .boton-encriptar, .boton-desencriptar {
+        width: 90% 
+        }
+    .boton-encriptar{
+        margin: 10px 7%;
+    }
+    .boton-desencriptar{
+        margin: 0;
+    }
+    .contenido-encriptado{
+        display: block;
+        width: 100%;
+        height: 300px;
+        margin: 70% 5px;
+       
+    }
+    .contenido-encriptado p:first-child{
+        font-size: 2em;
+    }
+    .muñeco{
+        display: none;
+    }
+    .boton-copiar{
+        margin: 0 15%;
+    }
+  }

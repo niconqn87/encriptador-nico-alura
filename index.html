@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de Niconqn</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="contenido">
+            <img src="imagenes/Logo.png" alt="logo-encriptador" class="logo">
+            
+            <div class="contenido-encriptar">
+                <h1></h1>
+                <input type="text" id="texto" class="texto-encriptar" required placeholder="Ingrese el texto aquí" oninput="validarInput(event)">
+                <div class="botones-y-alerta">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                    <button class="boton-encriptar" onclick="encriptador()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="desencriptador()">Desencriptar</button>
+                </div>
+            </div>
+
+            <div class="contenido-encriptado">
+                <p id="texto-encriptado"></p>
+                    <div id="logo-texto" class="desktop1">
+                        <img src="imagenes/Muñeco.png" alt="muñeco-encriptador" class="muñeco">
+                        <h2>Ningún mensaje fué encontrado</h2>
+                        <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+                    </div>
+                <button id="boton-para-copiar" class="boton-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
