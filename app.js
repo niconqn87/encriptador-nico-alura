@@ -17,6 +17,13 @@ function validarInput() {
   }
 //para el boton de encriptar
 function encriptador() {
+  if(document.getElementById("texto").value == "gaton y gatalina"){
+    var ocultar = document.getElementById("logo-texto");
+    ocultar.style.display = "none";
+    
+    var mostrar = document.getElementById("gatitos-secretos");
+    mostrar.style.display = "block";
+  } else {
     let textoParaEncriptar = document.getElementById("texto").value;
     let caracteresEncriptables = ["e", "i", "a", "o", "u"];
     let encriptacion = ["enter", "imes", "ai", "ober", "ufat"];
@@ -29,11 +36,14 @@ function encriptador() {
     var mostrar = document.getElementById("boton-para-copiar");
     mostrar.style.display = "block";
   }
+}
 //para el boton de desencriptar
-  function desencriptador() {
+
+ function desencriptador() {
     let textoParaEncriptar = document.getElementById("texto").value;
-    let encriptacion = ["e", "i", "a", "o", "u"];
-    let caracteresEncriptables = ["enter", "imes", "ai", "ober", "ufat"];
+    let encriptacion = [ "i", "a","e", "o", "u"];
+    let caracteresEncriptables = [ "imes", "ai","enter", "ober", "ufat"];
+    
     let textoEncriptado = reemplazo(textoParaEncriptar, caracteresEncriptables, encriptacion);
     document.getElementById("texto-encriptado").innerText = textoEncriptado;
 
@@ -43,6 +53,7 @@ function encriptador() {
     var mostrar = document.getElementById("boton-para-copiar");
     mostrar.style.display = "block";
   }
+
 //para buscar patrones y reemplazarlos por otros en el texto del input
   function reemplazo(texto, arregloDePatrones, arregloDeReemplazos) {
     //para cada elemento y posición

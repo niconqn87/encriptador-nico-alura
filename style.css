@@ -76,6 +76,12 @@ button:active{
     width:80% ;
     margin: 0 10%;
 }
+#gatitos-secretos{
+    width: 80%;
+    margin: 10%;
+    box-shadow: 4px 4px 10px;
+    display: none;
+}
 .contenido-encriptado h2{
     text-align: center;
     font-size: 2em;
