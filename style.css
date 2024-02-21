@@ -78,7 +78,7 @@ button:active{
 }
 #gatitos-secretos{
     width: 80%;
-    margin: 10%;
+    margin: 10% 10% ;
     box-shadow: 4px 4px 10px;
     display: none;
 }

@@ -18,9 +18,12 @@ function validarInput() {
 //para el boton de encriptar
 function encriptador() {
   if(document.getElementById("texto").value == "gaton y gatalina"){
+    var ocultar = document.getElementById("texto-encriptado");
+    ocultar.style.display = "none";
     var ocultar = document.getElementById("logo-texto");
     ocultar.style.display = "none";
-    
+    var mostrar = document.getElementById("boton-para-copiar");
+    mostrar.style.display = "none";
     var mostrar = document.getElementById("gatitos-secretos");
     mostrar.style.display = "block";
   } else {
